@@ -1,0 +1,45 @@
+<html>
+    <head>
+      {{>links}}
+    </head>
+    <body>
+        {{>navbar}}
+        <div class="container-fluid main_header">
+          <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="weatherInfo">
+                  <form class="weatherForm">
+                      <input type="text" class="searchInput" id="searchInput" autocomplete="off" placeholder="Enter city name">
+                      <input type="submit" class="searchButton" id="searchButton" value="Search">
+                  </form> 
+                  <div class="tempInfo">
+                    <div class="upperLayer">
+                      <p id="day" class="day">Sunday</p>
+                      <p id="date" class="date">4 July</p>
+                    </div>
+
+                    <div class="middleLayer">
+                      <p id="cityCountry">Get you info here</p>
+                    </div>
+
+                    <div class="lowerLayer" id="tempDiv">
+                       <p>
+                         <span id="temp">0</span>
+                         <sup class="degree">0</sup>C 
+                         <span class="tempStatus" id="tempStatus">
+                           <i class="fas fa-cloud"></i>
+                          </span>
+                       </p>
+                      
+                    </div>
+
+                  </div>                  
+                </div>
+              </div>
+             </div>
+          </div>
+        </div>
+        {{>footer}}
+    </body>
+    <script src="js/main.js"></script>
+</html>

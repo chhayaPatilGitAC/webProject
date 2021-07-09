@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+:root {
+    --main-bg :#1e272e;
+    --main-colour: #0097e6;
+}
+body {
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    margin: 0;
+}
+.main_menu {
+    background: var(--main-bg);
+}
+.navbar {
+  color: white;
+  background-color: var(--main-bg);
+  padding: 1rem 0;
+}
+.navbar a {
+    color: white;
+    font-size: 1rem;
+}
+.navbar a:hover{
+    color:var(--main-colour) ;
+}
+.navbar-toggler {
+    background: grey;
+}
+.fa-snowflake {
+   transition: all linear;
+   animation: rot 2s linear infinite;
+   color: var(--main-colour);
+}
+@keyframes rot {
+    0% {
+        transform : rotate(0deg);
+    }
+    100% {
+        transform : rotate(360deg);
+    } 
+}
+.main_header_left {
+    height:40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_header_right {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+span {
+    color: var(--main-colour);
+}
+.main_header_left h2 {
+  margin-bottom: 2rem;
+}
+.main_header_right h2 {
+    margin-bottom: 2rem;
+  }
+.main_header_left button{
+    line-height: 0.2rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    box-shadow: 0px 8px 6px -6px #000000d4;
+}
+.main_header_left button:hover {
+    box-shadow: 0px 8px 6px -6px var(--main-colour);
+}
+
+.main_header_right button{
+    line-height: 0.2rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    box-shadow: 0px 8px 6px -6px #000000d4;
+}
+
+.main_header_right button:hover {
+    box-shadow: 0px 8px 6px -6px var(--main-colour);
+}
+
+footer {
+    line-height: 3rem;
+    text-align: center;
+    margin: 0;
+    background: var(--main-bg);
+    color: white;
+    font-size: 0.8rem;
+    margin-top: auto;
+}
+footer p {
+    margin: 0;
+    word-spacing: 0.2rem;
+}
+
+.pageNotFound {
+    text-align: center;
+}
+.pageNotFound h2 {
+ margin-bottom: 1rem;
+}
+.pageNotFound img {
+    width: 45rem;
+    height: 25rem;
+}
+
+.pageNotFound button{
+    line-height: 0.2rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    box-shadow: 0px 8px 6px -6px #000000d4;
+    margin-bottom :2rem;
+}
+
+.pageNotFound button:hover {
+    box-shadow: 0px 8px 6px -6px var(--main-colour);
+}
+.weatherInfo {
+    color: lightgrey;
+    font-weight: bold;
+}
+.searchInput{
+    width: 100%;
+    border-radius: 2rem;
+    padding: 0 2rem;
+    background: var(--main-bg);
+    outline: none;
+    color: lightgray;
+    font-weight: bold;
+    position: relative;
+    border: none;
+}
+.searchButton{
+    width: 6rem;
+    background: var(--main-colour);
+    border-radius: 2rem;
+    line-height: 3rem;
+    border: none;
+    margin: 17px;
+    position: absolute;
+    right: 218px;
+    top: 53px;
+    cursor: pointer;
+    outline: none;
+}
+
+.searchButton:hover {
+    background:white;
+    color: var(--main-colour);
+}
+.weatherForm{
+    background: var(--main-bg);
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border-radius: 2rem;
+    line-height: 3.7rem;
+    margin-top: 4rem;
+}
+::placeholder {
+    color: lightgray;
+}
+.tempInfo {
+    width: 45%;
+    height: 50%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    background: var(--main-bg);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+.upperLayer {
+    display: inline-flex;
+}
+.middleLayer {
+    display: inline-flex;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+.lowerLayer{
+    font-size: 4rem;
+    display: inline-flex;
+    width: 100%;
+    text-align: right !important;
+}
+.day{
+    width: 50%;
+    margin: 0;
+    text-align: left;
+}
+.date{
+    width: 50%;
+    margin: 0;
+    text-align: right;
+}
+.tempStatus {
+    margin:1rem;
+}
+
+#temp {
+    color :white
+}
+
+@media (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      flex:none;
+      max-width: 100%;
+    }
+} 
