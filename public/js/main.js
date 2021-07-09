@@ -33,7 +33,6 @@ const getWeatherInfo = async(event) => {
             if (weather == 'Clouds') {
                 tempStatus.innerHTML = '<i class="fas fa-cloud"></i>';
             } else if (weather == 'Sun') {
-                console.log('in b');
                 tempStatus.innerHTML = '<i class="fas fa-sun" style="color:#ff9800"></i>';
             } else if (weather == 'Rainy') {
                 tempStatus.innerHTML = '<i class="fas fa-cloud-rain"></i>';
