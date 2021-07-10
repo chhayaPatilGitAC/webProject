@@ -231,7 +231,7 @@ footer p {
         right:158px;
     }
     .tempInfo {
-        width: 62%;
+        width: 65%;
     }
     .main_header_left {
         min-width: 100%;
@@ -242,18 +242,10 @@ footer p {
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .searchButton{
-        right:158px;
-    }
-    .tempInfo {
-        width: 62%;
-    }
-}
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .searchButton{
         right:217px;
     }
     .tempInfo {
-        width: 50%;
+        width: 65%;
     }
     .main_header_left {
         min-width: 100%;
@@ -267,7 +259,7 @@ footer p {
         right:158px;
     }
     .tempInfo {
-        width: 62%;
+        width: 65%;
     }
     .main_header_left {
         min-width: 100%;
@@ -282,7 +274,7 @@ footer p {
         right:0px;
     }
     .tempInfo {
-        width: 62%;
+        width: 65%;
     }
     .main_header_left {
         min-width: 100%;
